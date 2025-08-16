@@ -8,6 +8,7 @@
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     background-color: rgb(30, 193, 205);
 
@@ -37,4 +38,8 @@ button{
     flex-wrap: wrap;
     background-color: black;
     margin: 10px auto;
+}
+
+#resolution{
+    font-weight: 600;
 }

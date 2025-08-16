@@ -1,7 +1,8 @@
 const container = document.querySelector("#container");
 const div1 = document.createElement('div');
-const btnSetSize = document.querySelector('#btn-set-size')
+const btnSetSize = document.querySelector('#btn-set-size');
 const btnReset = document.querySelector('#btn-reset');
+const resolution = document.querySelector('#resolution');
 
 container.appendChild(div1);
 let sideLength = 16;
@@ -14,6 +15,7 @@ btnSetSize.addEventListener('click', (e) => {
     area = 256/(quotient*quotient);
     sideLength = userLength;
     createGrid();
+    resolution.textContent = `${userLength} x ${userLength}`;
 })
 
 btnReset.addEventListener('click', () => {
