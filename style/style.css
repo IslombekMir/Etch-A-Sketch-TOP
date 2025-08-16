@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+#btn-set-size{
+    margin: 10px;
+}
+
+#container{
+    background-color: red;
+    padding: 10px;
+}
+
+#container div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    margin: 10px;
+}
