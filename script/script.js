@@ -34,7 +34,12 @@ function createGrid() {
 
 div1.addEventListener('mouseover', (e) => {
     let target = e.target;
-    target.style.background = 'blue';
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    target.style.background = `rgb(${r}, ${g}, ${b})`;
+    let opacity = +target.style.opacity || 1;
+    target.style.opacity = opacity * 0.9;
 })
 
 
