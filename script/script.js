@@ -1,6 +1,7 @@
 const container = document.querySelector("#container");
 const div1 = document.createElement('div');
 const btnSetSize = document.querySelector('#btn-set-size')
+const btnReset = document.querySelector('#btn-reset');
 
 container.appendChild(div1);
 let sideLength = 16;
@@ -15,7 +16,9 @@ btnSetSize.addEventListener('click', (e) => {
     createGrid();
 })
 
-
+btnReset.addEventListener('click', () => {
+    createGrid();
+})
 
 
 
@@ -27,7 +30,7 @@ function createGrid() {
     
     for (i = 0; i < area; i++) {
     let pixel = document.createElement('span');
-    pixel.setAttribute('style', `width: ${8*quotient}px; height: ${8*quotient}px; background: lime`);
+    pixel.setAttribute('style', `width: ${8*quotient}px; height: ${8*quotient}px; background: rgb(247, 246, 242)`);
     div1.appendChild(pixel);
 }
 }
