@@ -8,11 +8,18 @@
     <script src="script/script.js" defer></script>
 </head>
 <body>
-    <div id="buttons">
-        <button id="btn-set-size">Set Size</button>
-        <button id="btn-reset">Reset</button>
-        <p id="resolution">Resolution:</p>
+    <div class="full-wrapper">
+        <div id="buttons">
+            <button id="btn-set-size">Set Size</button>
+            <button id="btn-reset">Reset</button>
+            <p id="resolution">Resolution:</p>
+        </div>
+        <div id="container"></div>
+        <div class="toggle-color-style-wrapper">
+            <span>Choose a Color</span>
+            <input type="checkbox" id="toggle-color-style">
+            <input type="color" id="color-picker">
+        </div>
     </div>
-    <div id="container"></div>
 </body>
 </html>
